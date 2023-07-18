@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+
+    web:
+        image: 'dontdrinkandroot/php:8-1-alpine-symfony-dev'
+        ports:
+            - "8000:80"
+        volumes:
+            - .:/var/www/
+#
+#    postgres:
+#        image: postgres:15.3
+#        ports:
+#            - "5432:5432"
+#        environment:
+#            POSTGRES_USER: 'user'
+#            POSTGRES_PASSWORD: 'password'
+#            POSTGRES_DB: 'database'
